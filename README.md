@@ -66,10 +66,13 @@ npm install --legacy-peer-deps
 3. Set up environment variables (optional, for contact form):
 Create a `.env` file in the root directory:
 ```env
-VITE_APP_EMAILJS_USERID=your_emailjs_user_id
-VITE_APP_EMAILJS_TEMPLATEID=your_emailjs_template_id
-VITE_APP_EMAILJS_RECEIVERID=your_emailjs_receiver_id
+VITE_APP_EMAILJS_SERVICE_ID=your_emailjs_service_id
+VITE_APP_EMAILJS_TEMPLATE_ID=your_emailjs_template_id
+VITE_APP_EMAILJS_PUBLIC_KEY=your_emailjs_public_key
+VITE_APP_EMAILJS_TO_EMAIL=your_email_address
 ```
+
+**Note**: If environment variables are not set, the component will use default values. However, it's recommended to set up your own EmailJS account for production use.
 
 4. Run the development server:
 ```bash

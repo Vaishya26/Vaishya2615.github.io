@@ -31,18 +31,23 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+    const serviceId = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID || "service_bx65tcd";
+    const templateId = import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID || "template_2bpzhh9";
+    const publicKey = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY || "zJ_FI7Buoqggbi0Vq";
+    const toEmail = import.meta.env.VITE_APP_EMAILJS_TO_EMAIL || "vaishya.arpit9@gmail.com";
+
     emailjs
       .send(
-        "service_bx65tcd",
-        "template_2bpzhh9",
+        serviceId,
+        templateId,
         {
           from_name: form.name,
           to_name: "Arpit Vaishya",
           from_email: form.email,
-          to_email: "vaishya.arpit9@gmail.com",
+          to_email: toEmail,
           message: form.message,
         },
-        "zJ_FI7Buoqggbi0Vq"
+        publicKey
       )
       .then(
         () => {
