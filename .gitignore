@@ -27,3 +27,6 @@ dist-ssr
 
 # vscode
 .vscode
+
+# Playwright MCP
+.playwright-mcp/
