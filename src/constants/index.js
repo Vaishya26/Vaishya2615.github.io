@@ -16,6 +16,8 @@ import {
   webgl,
   docker,
   ajnalens,
+  ajnalens2,
+  lookout,
   meta,
   starbucks,
   tesla,
@@ -118,22 +120,36 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Full-Stack Intern",
-    company_name: "Ajnalens",
-    icon: ajnalens,
+    title: "Software Engineer",
+    company_name: "LOOKOUT",
+    icon: lookout,
     iconBg: "#383E56",
-    date: "July 2020 - September 2020",
+    date: "May 2025 - Present",
     points: [
-      "Implemented a prototype-based metaverse app for immersive collaborative learning with AjnaX AR glasses.",
-      "Enabled visualization of lab experiments in a mixed reality environment, featuring 3D model manipulation, spatial audio, and 3D Annotations.",
-      "Pioneered SFU (Selective Forward Unit) research in media Soup, enhancing network performance by 80% for multiple connections in an interactive virtual environment.",
-      "Tech-stack: Three.JS, Node.JS, Python, web-XR, web-RTC, socket.io, AWS-EC2, Git, CI/CD.",
+      "Built an in-browser perception system (YOLOv7 + NVIDIA DeepStream) with Three.js, WebGPU acceleration for low-latency object detection and rendering of maritime targets.",
+      "Engineered a 4K MJPEG streaming pipeline with dynamic camera switching (wide, zoom, IR, docking) over WebSockets using GPU-based decoding in Web Workers.",
+      "Developed a horizon segmentation module using SAM3 and custom semantic logic for sky–sea boundary detection, enhancing navigable surface estimation.",
+      "Applied Hungarian Matching for real-time multi-target association between CV detections and AR-rendered overlays."
     ],
   },
   {
-    title: "Full-Stack Developer",
+    title: "Software Engineer Intern",
+    company_name: "LOOKOUT",
+    icon: lookout,
+    iconBg: "#383E56",
+    date: "May 2024 - May 2025",
+    points: [
+      "Built a time-synchronized replay and simulation framework for video, sensor telemetry, and perception outputs, enabling engineers to reconstruct and analyze real-world system behavior.",
+      "Developed a 3D virtual navigation environment using Three.js, improving spatial accuracy of rendered vessel trajectories by ~80%.",
+      "Designed a telemetry ingestion and querying layer using InfluxDB, supporting high-volume time-series data replay with live dashboards.",
+      "Created internal debugging tools allowing engineers to scrub timelines, filter perception outputs, and annotate sessions, accelerating root-cause analysis.",
+      "Integrated OTA configuration updates and sensor health monitoring, bridging onboard systems with offboard analysis tools.",
+    ],
+  },
+  {
+    title: " Senior Full-Stack Developer",
     company_name: "AjnaLens",
-    icon: ajnalens,
+    icon: ajnalens2,
     iconBg: "#383E56",
     date: "Sep 2020 - April 2023",
     points: [
@@ -144,17 +160,7 @@ const experiences = [
       "Architected cloud-based GPU resource allocation for real-time users using Kubernetes cluster helping the company to optimize cloud resources.",
       "Spearheaded a team of 5 full-stack developers and 2 interns, demonstrating effective leadership in overseeing various projects."
     ],
-  },
-  {
-    title: "Research Assistant",
-    company_name: "California State University, Los Angeles",
-    icon: CSULA,
-    iconBg: "#383E56",
-    date: "October 2023 -  Present",
-    points: [
-      "I am working on project SPACE (Simulation-Based Pedagogical Approach for STEM Education) funded by National Science Foundation (NSF) which aims to solve advanced scientific problems using Computer Graphics, Simulations, and modeling.",
-    ],
-  },
+  }
 ];
 
 const testimonials = [
@@ -166,22 +172,6 @@ const testimonials = [
     company: "AjnaLens",
     image: "https://media.licdn.com/dms/image/D4D03AQFY40Y6LsaiJQ/profile-displayphoto-shrink_400_400/0/1684985939522?e=1709769600&v=beta&t=UvIJj6KwkfUw8EKxkacWrg2Oxo3jLVTjUeYpmQNdPso",
   }
-  // {
-  //   testimonial:
-  //     "I've never met a web developer who truly cares about their clients' success like Rick does.",
-  //   name: "Chris Brown",
-  //   designation: "COO",
-  //   company: "DEF Corp",
-  //   image: "https://randomuser.me/api/portraits/men/5.jpg",
-  // },
-  // {
-  //   testimonial:
-  //     "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-  //   name: "Lisa Wang",
-  //   designation: "CTO",
-  //   company: "456 Enterprises",
-  //   image: "https://randomuser.me/api/portraits/women/6.jpg",
-  // },
 ];
 
 const projects = [

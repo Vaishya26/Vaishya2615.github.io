@@ -47,11 +47,8 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled Full-Stack developer with experience in JavaScript, 
-        Python and expertise in frameworks like React, Node.js, Django and
-        Three.js. I like working on 3D AR/VR/XR technologies and have worked 
-        on WebXR, CloudXR for building scalable web based XR solutions that 
-        solve real-world problems. Let's work together to bring your ideas to life!
+       My passion lies in building immersive, high-performance applications that push the boundaries of Spatial Computing, AR/VR, and the Metaverse.
+In my role as a Software Engineer at LOOKOUT, I am working on developing real-time 3D geospatial navigation systems
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

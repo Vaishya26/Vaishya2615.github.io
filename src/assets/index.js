@@ -26,6 +26,9 @@ import CSULA from "./company/CSULA.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import ajnalens from "./company/ajnalens.png";
+import ajnalens2 from "./company/ajnalens-logo.webp";
+import lookout from "./company/lookout.webp";
+
 
 import remote_tool from "./3D-tool.gif";
 import flask_folium from "./flask-folium.png";
@@ -59,6 +62,8 @@ export {
   starbucks,
   tesla,
   ajnalens,
+  ajnalens2,
+  lookout,
   remote_tool,
   flask_folium,
   ai_town,

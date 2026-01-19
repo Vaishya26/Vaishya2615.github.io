@@ -11,6 +11,7 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import { ajnalens2, lookout } from "../assets";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -27,7 +28,11 @@ const ExperienceCard = ({ experience }) => {
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className='w-[60%] h-[60%] object-contain'
+            className={`object-contain ${
+              experience.icon === ajnalens2 || experience.icon === lookout
+                ? 'w-[100%] h-[100%]'
+                : 'w-[60%] h-[60%]'
+            }`}
           />
         </div>
       }
